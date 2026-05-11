@@ -4,7 +4,7 @@
 This project classifies 28 Arabic handwritten characters using deep learning.
 
 ## Dataset
-- **Source**: 
+- **Source**: https://github.com/HossamBalaha/HMBD-v1 
 - **Total Images**: 13,075
 - **Classes**: 28 Arabic letters (isolated form)
 - **Image Size**: 64×64 pixels (grayscale)
