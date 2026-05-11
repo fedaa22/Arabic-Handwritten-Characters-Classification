@@ -1,0 +1,98 @@
+================================================================================
+EVALUATION REPORT
+Arabic Handwritten Character Classification
+================================================================================
+
+SCRATCH CNN PERFORMANCE
+----------------------------------------
+Accuracy:  0.3496
+Precision: 0.4326
+Recall:    0.3496
+F1-Score:  0.2992
+ROC AUC:   0.9540
+Parameters: 9,678,556
+
+TRANSFER LEARNING PERFORMANCE
+----------------------------------------
+Accuracy:  0.8445
+Precision: 0.8611
+Recall:    0.8445
+F1-Score:  0.8439
+ROC AUC:   0.9953
+Parameters: 3,055,452
+
+CLASSIFICATION REPORTS
+========================================
+
+Scratch CNN:
+                          precision    recall  f1-score   support
+
+            Ain_Isolated       0.45      0.58      0.51        69
+Alf_Hamza_Above_Isolated       0.00      0.00      0.00        72
+            Baa_Isolated       0.00      0.00      0.00        70
+           Daad_Isolated       0.84      0.72      0.78        68
+            Dal_Isolated       0.00      0.00      0.00        71
+            Faa_Isolated       0.50      0.03      0.05        69
+            Gem_Isolated       0.42      0.59      0.49        71
+             Ha_Isolated       0.00      0.00      0.00        70
+            Haa_Isolated       0.09      1.00      0.17        72
+          Hamza_Isolated       0.00      0.00      0.00        70
+            Kaf_Isolated       0.93      0.77      0.84        69
+           Khaa_Isolated       0.41      0.74      0.53        72
+            Lam_Isolated       0.00      0.00      0.00        70
+            Mem_Isolated       1.00      0.39      0.56        70
+            Non_Isolated       0.00      0.00      0.00        70
+            Qaf_Isolated       0.34      0.67      0.45        70
+            Raa_Isolated       0.00      0.00      0.00        72
+           Saad_Isolated       0.45      0.97      0.61        69
+           Shen_Isolated       1.00      0.51      0.67        69
+            Sin_Isolated       1.00      0.07      0.13        71
+            Taa_Isolated       1.00      0.01      0.03        70
+            Tah_Isolated       0.50      0.86      0.63        69
+           Thaa_Isolated       1.00      0.09      0.16        68
+            Waw_Isolated       0.34      0.79      0.48        70
+        Yaa_Dot_Isolated       0.97      0.43      0.59        70
+            Zah_Isolated       0.98      0.63      0.77        68
+            Zal_Isolated       0.00      0.00      0.00        71
+            Zin_Isolated       0.00      0.00      0.00        72
+
+                accuracy                           0.35      1962
+               macro avg       0.44      0.35      0.30      1962
+            weighted avg       0.43      0.35      0.30      1962
+
+
+Transfer Learning:
+                          precision    recall  f1-score   support
+
+            Ain_Isolated       0.96      0.93      0.94        69
+Alf_Hamza_Above_Isolated       0.97      0.93      0.95        72
+            Baa_Isolated       0.87      0.94      0.90        70
+           Daad_Isolated       0.84      0.84      0.84        68
+            Dal_Isolated       0.90      0.63      0.74        71
+            Faa_Isolated       0.52      0.84      0.64        69
+            Gem_Isolated       0.92      0.80      0.86        71
+             Ha_Isolated       0.84      0.84      0.84        70
+            Haa_Isolated       0.79      0.82      0.80        72
+          Hamza_Isolated       0.84      0.89      0.86        70
+            Kaf_Isolated       0.95      0.90      0.93        69
+           Khaa_Isolated       0.90      0.96      0.93        72
+            Lam_Isolated       0.94      0.96      0.95        70
+            Mem_Isolated       0.89      0.91      0.90        70
+            Non_Isolated       0.87      0.74      0.80        70
+            Qaf_Isolated       0.66      0.87      0.75        70
+            Raa_Isolated       0.85      0.94      0.89        72
+           Saad_Isolated       0.70      1.00      0.83        69
+           Shen_Isolated       0.98      0.74      0.84        69
+            Sin_Isolated       0.93      0.80      0.86        71
+            Taa_Isolated       0.74      0.57      0.65        70
+            Tah_Isolated       0.83      0.97      0.89        69
+           Thaa_Isolated       0.94      0.47      0.63        68
+            Waw_Isolated       0.76      0.87      0.81        70
+        Yaa_Dot_Isolated       0.89      0.91      0.90        70
+            Zah_Isolated       0.95      0.88      0.92        68
+            Zal_Isolated       0.96      0.75      0.84        71
+            Zin_Isolated       0.90      0.92      0.91        72
+
+                accuracy                           0.84      1962
+               macro avg       0.86      0.84      0.84      1962
+            weighted avg       0.86      0.84      0.84      1962
